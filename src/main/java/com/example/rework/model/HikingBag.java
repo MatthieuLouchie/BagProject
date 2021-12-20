@@ -1,5 +1,4 @@
-package com.example.Rework.model;
-
+package com.example.rework.model;
 
 public class HikingBag extends Bag{
     private int capacity = 50;

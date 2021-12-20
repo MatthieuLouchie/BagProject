@@ -1,9 +1,9 @@
-package com.example.Rework.service;
+package com.example.rework.service;
 
-import com.example.Rework.model.Bag;
-import com.example.Rework.model.HikingBag;
-import com.example.Rework.model.SchoolBag;
-import com.example.Rework.repository.BagRepository;
+import com.example.rework.model.Bag;
+import com.example.rework.model.HikingBag;
+import com.example.rework.model.SchoolBag;
+import com.example.rework.repository.BagRepository;
 import java.util.List;
 
 
@@ -19,7 +19,7 @@ public class BagService {
                 repository.create(new HikingBag(name));
                 return;
             default:
-                throw new RuntimeException("Error : This type of bag is not available");
+                throw new Myexception("Error : This type of bag is not available");
         }
     }
 

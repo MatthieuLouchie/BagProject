@@ -1,7 +1,7 @@
-package com.example.Rework.repository;
+package com.example.rework.repository;
 
-import com.example.Rework.model.Bag;
-
+import com.example.rework.model.Bag;
+import com.example.rework.service.Myexception;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -30,7 +30,7 @@ public class BagRepository {
     public void create(Bag defaultBag){
         for (Bag actualBag : bags) {
             if (defaultBag.getName().equals(actualBag.getName())) {
-                throw new RuntimeException("Error : This bag already exists");
+                throw new Myexception("Error : This bag already exists");
             }
         }
         bags.add(defaultBag);

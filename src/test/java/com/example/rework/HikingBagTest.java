@@ -1,6 +1,6 @@
-package com.example.Rework;
+package com.example.rework;
 
-import com.example.Rework.model.HikingBag;
+import com.example.rework.model.HikingBag;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 
 class HikingBagTest {
     @Test
-    void shouldHaveTheRightContenance(){
+    void shouldHaveTheRightCapacity(){
         // given
         HikingBag TestHikingBag = new HikingBag("MyHikingBag");
 
@@ -44,7 +44,7 @@ class HikingBagTest {
     }
 
     @Test
-    void shouldHaveTheRightSlotsAndContenance(){
+    void shouldHaveTheRightSlotsAndCapacity(){
         // given
         HikingBag TestHikingBag = new HikingBag("MyHikingBag");
 

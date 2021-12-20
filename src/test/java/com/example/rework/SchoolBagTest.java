@@ -1,7 +1,7 @@
-package com.example.Rework;
+package com.example.rework;
 
-import com.example.Rework.model.Bag;
-import com.example.Rework.model.SchoolBag;
+import com.example.rework.model.Bag;
+import com.example.rework.model.SchoolBag;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 
 class SchoolBagTest {
     @Test
-    void shouldHaveTheRightContenance(){
+    void shouldHaveTheRightCapacity(){
         // given
         Bag TestSchoolBag = new SchoolBag("SchoolBagTest");
 

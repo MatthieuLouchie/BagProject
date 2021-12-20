@@ -1,7 +1,7 @@
-package com.example.Rework;
+package com.example.rework;
 
-import com.example.Rework.model.Bag;
-import com.example.Rework.service.BagService;
+import com.example.rework.model.Bag;
+import com.example.rework.service.BagService;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import java.util.List;
@@ -47,11 +47,11 @@ class BagTest {
 
         // when
         List<Bag> test = bagService.get();                              //call the entire list of bags
-        Bag firstBag = bagService.get("SchoolBag1");                    //put in a variable my first bag
-        Bag secondBag = bagService.get("HikingBag1");                   //put in a variable my second bag
 
         // then
-        Assertions.assertThat(test).contains(firstBag, secondBag);      //verify if the entire list contains my two bags
+        Assertions.assertThat(test)
+                .extracting(Bag::getName)
+                .contains("SchoolBag1", "HikingBag1");      //verify if the entire list contains my two bags
     }
 
     @Test

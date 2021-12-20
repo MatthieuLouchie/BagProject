@@ -1,4 +1,4 @@
-package com.example.Rework.model;
+package com.example.rework.model;
 
 public abstract class Bag {
 

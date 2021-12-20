@@ -1,0 +1,4 @@
+MyBag1 HikingBag
+MyBag2 SchoolBag
+MyBag3 HikingBag
+MyBag4 SchoolBag
